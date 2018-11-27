@@ -1,6 +1,11 @@
+/*
+ * Tracker API V1
+ * Move your app forward with the gpi API
+ *
+ */
+
 package com.swift;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-26T11:46:38.130-05:00")
 public class StringUtil {
   /**
    * Check if the given array contains the given value (with case-insensitive comparison).

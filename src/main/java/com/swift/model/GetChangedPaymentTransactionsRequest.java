@@ -13,23 +13,19 @@
 
 package com.swift.model;
 
-import java.util.Objects;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+
+import com.google.gson.annotations.SerializedName;
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * This API is a delta query to get all payment update information starting from a given date and time. This API allows synchronization of a local database with the tracker database. [CR][LF]All use cases applicable for the get and search of payment transactions apply also for this API. [CR][LF]The use of the API to get the last changed payment transactions is driven by an architectural choice to feed a local database and to optimise the flow between the tracker and the API caller.[CR][LF]
  */
 @ApiModel(description = "This API is a delta query to get all payment update information starting from a given date and time. This API allows synchronization of a local database with the tracker database. [CR][LF]All use cases applicable for the get and search of payment transactions apply also for this API. [CR][LF]The use of the API to get the last changed payment transactions is driven by an architectural choice to feed a local database and to optimise the flow between the tracker and the API caller.[CR][LF]")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-26T11:46:38.130-05:00")
 public class GetChangedPaymentTransactionsRequest {
   @SerializedName("my_institution")
   private List<String> myInstitution = new ArrayList<String>();
