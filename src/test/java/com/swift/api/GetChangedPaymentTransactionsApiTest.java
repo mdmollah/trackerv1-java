@@ -45,7 +45,7 @@ public class GetChangedPaymentTransactionsApiTest {
 						"U1khA8h9Lm1PqzB99fG6uw", "yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B", requestBody, "0"),
 				mock_ApiResponse);
 
-		//System.out.println("Passed Test getChangedPaymentTransactionsPostWithHttpInfoShouldReturnResponse");
+		System.out.println("Passed Test getChangedPaymentTransactionsPostWithHttpInfoShouldReturnResponse");
 	}
 
 }
