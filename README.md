@@ -1,4 +1,4 @@
-# gpi-v1-java [![Build Status](https://travis-ci.com/swiftinc/gpi-v1-java.svg?branch=master)](https://travis-ci.com/swiftinc/gpi-v1-java)
+# tracker-v1-java [![Build Status](https://travis-ci.com/swiftinc/gpi-v1-java.svg?branch=master)](https://travis-ci.com/swiftinc/gpi-v1-java)
 
 ## Requirements
 
