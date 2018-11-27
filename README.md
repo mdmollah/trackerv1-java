@@ -1,4 +1,4 @@
-# gpi-v1-java
+# gpi-v1-java [![Build Status](https://travis-ci.com/swiftinc/gpi-v1-java.svg?branch=master)](https://travis-ci.com/swiftinc/gpi-v1-java)
 
 ## Requirements
 
@@ -165,4 +165,3 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 ## Author
 
 Hassan.MOLLAH@swift.com
-
