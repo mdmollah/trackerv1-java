@@ -1,4 +1,4 @@
-# tracker-v1-java [![Build Status](https://travis-ci.com/swiftinc/gpi-v1-java.svg?branch=master)](https://travis-ci.com/swiftinc/gpi-v1-java)
+# gpi-tracker-v1-java [![Build Status](https://travis-ci.com/swiftinc/gpi-tracker-v1-java.svg?branch=master)](https://travis-ci.com/swiftinc/gpi-tracker-v1-java)
 
 ## Requirements
 
@@ -26,8 +26,8 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-    <groupId>com.swift</groupId>
-    <artifactId>gpi-v1-java</artifactId>
+    <groupId>com.swift.api</groupId>
+    <artifactId>gpi-tracker-v1-java</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
 </dependency>
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "com.swift:gpi-v1-java:1.0.0"
+compile "com.swift.api:gpi-v1-java:1.0.0"
 ```
 
 ### Others
@@ -49,7 +49,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/gpi-v1-java-1.0.0.jar
+* target/gpi-tracker-v1-java-1.0.0.jar
 * target/lib/*.jar
 
 ## Getting Started
