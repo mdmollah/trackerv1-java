@@ -12,14 +12,6 @@ To install the API client library to your local Maven repository, simply execute
 mvn install
 ```
 
-To deploy it to a remote Maven repository instead, configure the settings of the repository and execute:
-
-```shell
-mvn deploy
-```
-
-Refer to the [official documentation](https://maven.apache.org/plugins/maven-deploy-plugin/usage.html) for more information.
-
 ### Maven users
 
 Add this dependency to your project's POM:
@@ -27,7 +19,7 @@ Add this dependency to your project's POM:
 ```xml
 <dependency>
     <groupId>com.swift.gpi.tracker</groupId>
-    <artifactId>v1-sdk</artifactId>
+    <artifactId>v1sdk</artifactId>
     <version>1.0.0</version>
     <scope>compile</scope>
 </dependency>
@@ -41,7 +33,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/swagger-java-client-1.0.0.jar
+* target/v1sdk-1.0.0.jar
 
 
 ## Example for API Endpoints
