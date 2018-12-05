@@ -1,20 +1,19 @@
-package com.swift.gpi.trackerv1.example;
+package com.swift.gpi.tracker.v1sdk.example;
 
 import org.junit.Test;
 
-import com.swift.gpi.trackerv1.ApiException;
-import com.swift.gpi.trackerv1.api.StatusConfirmationsApi;
-import com.swift.gpi.trackerv1.helper.UtilHelper;
-import com.swift.gpi.trackerv1.model.CamtA0100102;
-import com.swift.gpi.trackerv1.model.CamtA0100202;
+import com.swift.gpi.tracker.v1sdk.ApiException;
+import com.swift.gpi.tracker.v1sdk.api.GetPaymentTransactionDetailsApi;
+import com.swift.gpi.tracker.v1sdk.helper.UtilHelper;
+import com.swift.gpi.trackerv1sdk.model.CamtA0200102;
+import com.swift.gpi.trackerv1sdk.model.CamtA0200202;
 
-public class StatusConfirmationsApiExample {
+public class GetPaymentTransactionDetailsApiExampleTest {
 
 	@Test
-	public void statusConfirmationsPostTest() throws ApiException {
-
+	public void getPaymentTransactionDetailsPostTest() throws ApiException {
 		// TODO Auto-generated method stub
-		StatusConfirmationsApi apiInstance = new StatusConfirmationsApi();
+		GetPaymentTransactionDetailsApi apiInstance = new GetPaymentTransactionDetailsApi();
 		String laUApplicationID = UtilHelper.getInstance().mymap.get("laUApplicationID"); // String | ID that identifies the application generationg the API and used by the gpi Connector to retrieve the related LAU keys
 	    String laUVersion = UtilHelper.getInstance().mymap.get("laUVersion"); // String | version of the LAUSigned header. Mandatory. \"1.0\" for this first release
 	    String laUCallTime = UtilHelper.getInstance().mymap.get("laUCallTime"); // String | timestamp in UTC of the API call in the format YYYY-MM-DDTHH:MM:SS.sssZ
@@ -22,13 +21,13 @@ public class StatusConfirmationsApiExample {
 	    String laUSigned = UtilHelper.getInstance().mymap.get("laUSigned"); // String | service specific HTTP headers
 	    String laUSignature = UtilHelper.getInstance().mymap.get("laUSignature"); // String | contains the LAU signature, base64 ecoded
 	    String xApiKey = UtilHelper.getInstance().mymap.get("xApi"); // String | An API key given to your application to authenticate against the sandbox URL
-	 	CamtA0100102 requestBody = new CamtA0100102(); // CamtA0100102 | Status Confirmation Request
-		String xRecord = UtilHelper.getInstance().mymap.get("StatusConfirmationsApiTest.xRecord"); // String | A type of API response to get from API Sandbox. A value between 1 and 13
+	 	CamtA0200102 requestBody = new CamtA0200102(); // CamtA0200102 | Payment Transaction Request
+		String xRecord = UtilHelper.getInstance().mymap.get("GetPaymentTransactionDetailsApiTest.xRecord"); // String | A type of API response to get from API Sandbox. A value between 1 and 13
 		try {
-		    CamtA0100202 result = apiInstance.statusConfirmationsPost(laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xApiKey, requestBody, xRecord);
+		    CamtA0200202 result = apiInstance.getPaymentTransactionDetailsPost(laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xApiKey, requestBody, xRecord);
 		    System.out.println(result);
 		} catch (ApiException e) {
-		    System.err.println("Exception when calling StatusConfirmationsApi#statusConfirmationsPost");
+		    System.err.println("Exception when calling GetPaymentTransactionDetailsApi#getPaymentTransactionDetailsPost");
 		    e.printStackTrace();
 		}
 	}

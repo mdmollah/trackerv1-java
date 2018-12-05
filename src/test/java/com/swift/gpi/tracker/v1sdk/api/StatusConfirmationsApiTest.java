@@ -1,5 +1,5 @@
 
-package com.swift.gpi.trackerv1.api;
+package com.swift.gpi.tracker.v1sdk.api;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -7,17 +7,17 @@ import static org.mockito.Mockito.when;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.swift.gpi.trackerv1.ApiException;
-import com.swift.gpi.trackerv1.ApiResponse;
-import com.swift.gpi.trackerv1.model.ActiveOrHistoricCurrencyAndAmount;
-import com.swift.gpi.trackerv1.model.CamtA0100102;
-import com.swift.gpi.trackerv1.model.CamtA0100202;
-import com.swift.gpi.trackerv1.model.PaymentReason1Code;
-import com.swift.gpi.trackerv1.model.PaymentStatus3;
-import com.swift.gpi.trackerv1.model.PaymentStatusType1Choice;
-import com.swift.gpi.trackerv1.model.StatusDetails1;
-import com.swift.gpi.trackerv1.model.TransactionIndividualStatus4Code;
-import com.swift.gpi.trackerv1.model.UpdatePaymentStatusRequest;
+import com.swift.gpi.tracker.v1sdk.ApiException;
+import com.swift.gpi.tracker.v1sdk.ApiResponse;
+import com.swift.gpi.trackerv1sdk.model.ActiveOrHistoricCurrencyAndAmount;
+import com.swift.gpi.trackerv1sdk.model.CamtA0100102;
+import com.swift.gpi.trackerv1sdk.model.CamtA0100202;
+import com.swift.gpi.trackerv1sdk.model.PaymentReason1Code;
+import com.swift.gpi.trackerv1sdk.model.PaymentStatus3;
+import com.swift.gpi.trackerv1sdk.model.PaymentStatusType1Choice;
+import com.swift.gpi.trackerv1sdk.model.StatusDetails1;
+import com.swift.gpi.trackerv1sdk.model.TransactionIndividualStatus4Code;
+import com.swift.gpi.trackerv1sdk.model.UpdatePaymentStatusRequest;
 
 public class StatusConfirmationsApiTest {
 

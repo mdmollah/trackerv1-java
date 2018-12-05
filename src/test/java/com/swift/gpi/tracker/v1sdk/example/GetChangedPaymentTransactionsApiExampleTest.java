@@ -1,12 +1,12 @@
-package com.swift.gpi.trackerv1.example;
+package com.swift.gpi.tracker.v1sdk.example;
 
 import org.junit.Test;
 
-import com.swift.gpi.trackerv1.ApiException;
-import com.swift.gpi.trackerv1.api.GetChangedPaymentTransactionsApi;
-import com.swift.gpi.trackerv1.helper.UtilHelper;
-import com.swift.gpi.trackerv1.model.CamtA0400102;
-import com.swift.gpi.trackerv1.model.CamtA0400202;
+import com.swift.gpi.tracker.v1sdk.ApiException;
+import com.swift.gpi.tracker.v1sdk.api.GetChangedPaymentTransactionsApi;
+import com.swift.gpi.tracker.v1sdk.helper.UtilHelper;
+import com.swift.gpi.trackerv1sdk.model.CamtA0400102;
+import com.swift.gpi.trackerv1sdk.model.CamtA0400202;
 
 
 public class GetChangedPaymentTransactionsApiExampleTest {

@@ -44,7 +44,7 @@ Then manually install the following JARs:
 * target/swagger-java-client-1.0.0.jar
 
 
-## Documentation for API Endpoints
+## Example for API Endpoints
 
 All URIs are relative to *https://sandbox.swift.com/swift-apitracker-pilot/v1*
 

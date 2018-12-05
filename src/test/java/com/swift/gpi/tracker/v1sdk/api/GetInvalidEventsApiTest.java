@@ -1,4 +1,4 @@
-package com.swift.gpi.trackerv1.api;
+package com.swift.gpi.tracker.v1sdk.api;
 
 import static java.util.Arrays.asList;
 import static org.mockito.Mockito.mock;
@@ -9,11 +9,11 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.swift.gpi.trackerv1.ApiException;
-import com.swift.gpi.trackerv1.ApiResponse;
-import com.swift.gpi.trackerv1.model.CamtA0500102;
-import com.swift.gpi.trackerv1.model.CamtA0500202;
-import com.swift.gpi.trackerv1.model.GetInvalidEventsRequest;
+import com.swift.gpi.tracker.v1sdk.ApiException;
+import com.swift.gpi.tracker.v1sdk.ApiResponse;
+import com.swift.gpi.trackerv1sdk.model.CamtA0500102;
+import com.swift.gpi.trackerv1sdk.model.CamtA0500202;
+import com.swift.gpi.trackerv1sdk.model.GetInvalidEventsRequest;
 
 /**
  * API tests for GetInvalidEventsApi

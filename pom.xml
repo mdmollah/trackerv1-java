@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>com.swift.gpi.tracker</groupId>
-	<artifactId>v1-sdk</artifactId>
+	<artifactId>v1sdk</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
@@ -53,9 +53,9 @@
 							<inputSpec>${project.build.directory}/swagger.json</inputSpec>
 							<language>java</language>
 							<output>${project.build.directory}/generated-sources</output>
-							<apiPackage>com.swift.gpi.trackerv1.api</apiPackage>
-							<modelPackage>com.swift.gpi.trackerv1.model</modelPackage>
-							<invokerPackage>com.swift.gpi.trackerv1</invokerPackage>
+							<apiPackage>com.swift.gpi.tracker.v1sdk.api</apiPackage>
+							<modelPackage>com.swift.gpi.trackerv1sdk.model</modelPackage>
+							<invokerPackage>com.swift.gpi.tracker.v1sdk</invokerPackage>
 						</configuration>
 					</execution>
 				</executions>
