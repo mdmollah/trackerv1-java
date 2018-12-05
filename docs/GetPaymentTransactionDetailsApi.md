@@ -18,8 +18,8 @@ This API is a payment query to get detailed information regarding a given paymen
 ### Example
 ```java
 // Import classes:
-//import com.swift.ApiException;
-//import com.swift.api.GetPaymentTransactionDetailsApi;
+//import com.swift.gpi.trackerv1.ApiException;
+//import com.swift.gpi.trackerv1.api.GetPaymentTransactionDetailsApi;
 
 
 GetPaymentTransactionDetailsApi apiInstance = new GetPaymentTransactionDetailsApi();
@@ -31,7 +31,7 @@ String laUSigned = "(ApplAPIKey=yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B),(RBACRole=[Ful
 String laUSignature = "U1khA8h9Lm1PqzB99fG6uw=="; // String | contains the LAU signature, base64 ecoded
 String xApiKey = "yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B"; // String | An API key given to your application to authenticate against the sandbox URL
 CamtA0200102 requestBody = new CamtA0200102(); // CamtA0200102 | Payment Transaction Request
-String xRecord = "0"; // String | A type of API response to get from API Sandbox. A value between 1 and 13
+String xRecord = "1"; // String | A type of API response to get from API Sandbox. A value between 1 and 13
 try {
     CamtA0200202 result = apiInstance.getPaymentTransactionDetailsPost(laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xApiKey, requestBody, xRecord);
     System.out.println(result);
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
  **laUSignature** | **String**| contains the LAU signature, base64 ecoded | [default to U1khA8h9Lm1PqzB99fG6uw&#x3D;&#x3D;]
  **xApiKey** | **String**| An API key given to your application to authenticate against the sandbox URL | [default to yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B]
  **requestBody** | [**CamtA0200102**](CamtA0200102.md)| Payment Transaction Request |
- **xRecord** | **String**| A type of API response to get from API Sandbox. A value between 1 and 13 | [optional] [default to 0]
+ **xRecord** | **String**| A type of API response to get from API Sandbox. A value between 1 and 13 | [optional] [default to 1]
 
 ### Return type
 

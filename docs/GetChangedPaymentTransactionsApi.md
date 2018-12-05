@@ -18,8 +18,8 @@ This API is a delta query to get all payment update information starting from a 
 ### Example
 ```java
 // Import classes:
-//import com.swift.ApiException;
-//import com.swift.api.GetChangedPaymentTransactionsApi;
+//import com.swift.gpi.trackerv1.ApiException;
+//import com.swift.gpi.trackerv1.api.GetChangedPaymentTransactionsApi;
 
 
 GetChangedPaymentTransactionsApi apiInstance = new GetChangedPaymentTransactionsApi();
@@ -31,7 +31,7 @@ String laUSigned = "(ApplAPIKey=yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B),(RBACRole=[Ful
 String laUSignature = "U1khA8h9Lm1PqzB99fG6uw=="; // String | contains the LAU signature, base64 ecoded
 String xApiKey = "yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B"; // String | An API key given to your application to authenticate against the sandbox URL
 CamtA0400102 requestBody = new CamtA0400102(); // CamtA0400102 | Last Changed Payment Transactions Request
-String xRecord = "0"; // String | A type of API response to get from API Sandbox. A value between 1 and 13
+String xRecord = "1"; // String | A type of API response to get from API Sandbox. A value between 1 and 13
 try {
     CamtA0400202 result = apiInstance.getChangedPaymentTransactionsPost(laUApplicationID, laUVersion, laUCallTime, laURequestNonce, laUSigned, laUSignature, xApiKey, requestBody, xRecord);
     System.out.println(result);
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
  **laUSignature** | **String**| contains the LAU signature, base64 ecoded | [default to U1khA8h9Lm1PqzB99fG6uw&#x3D;&#x3D;]
  **xApiKey** | **String**| An API key given to your application to authenticate against the sandbox URL | [default to yVGhKiV5z1ZGdaqFXoZ8AiSA9n5CrY6B]
  **requestBody** | [**CamtA0400102**](CamtA0400102.md)| Last Changed Payment Transactions Request |
- **xRecord** | **String**| A type of API response to get from API Sandbox. A value between 1 and 13 | [optional] [default to 0]
+ **xRecord** | **String**| A type of API response to get from API Sandbox. A value between 1 and 13 | [optional] [default to 1]
 
 ### Return type
 
